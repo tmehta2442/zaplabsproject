@@ -1,22 +1,33 @@
 {
-  "name": "zaplabs",
+  "name": "zaplabs_project",
   "version": "1.0.0",
-  "description": "zaplabs exercise",
-  "main": "gulpfile.js",
+  "description": "design exercise",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/tmehta2442/ZapLabs.git"
-  },
   "author": "Tejas Mehta",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/tmehta2442/ZapLabs/issues"
-  },
-  "homepage": "https://github.com/tmehta2442/ZapLabs#readme",
   "devDependencies": {
-    "gulp": "^3.9.1"
+    "browser-sync": "^2.13.0",
+    "del": "^2.2.0",
+    "gulp": "^3.9.1",
+    "gulp-cache": "^0.4.5",
+    "gulp-cssnano": "^2.1.2",
+    "gulp-file-include": "^0.13.7",
+    "gulp-gh-pages": "^0.5.4",
+    "gulp-if": "^2.0.1",
+    "gulp-imagemin": "^3.0.1",
+    "gulp-sass": "^2.3.1",
+    "gulp-uglify": "^1.5.3",
+    "gulp-useref": "^3.1.0",
+    "run-sequence": "^1.2.1"
+  },
+  "engines": {
+    "node": "4.4.4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/npm/npm.git"
   }
 }

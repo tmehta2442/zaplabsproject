@@ -1,0 +1,83 @@
+@import "helpers";
+.container {
+	width: 100%;
+	max-width: 993px;
+	margin: 10px auto;
+}
+
+.row:before, 
+.row:after {
+	content:"";
+	display: table ;
+	clear:both;
+}
+
+/* Grid System built from scss/grid.scss */
+$columns: 12;
+
+@media #{$largescreen} {
+	@for $i from 1 through $columns {
+		.row_l_#{$i} {
+			width: percentage($i/12);
+			background-color: purple;
+			float: left;
+		}
+	}
+	@for $i from 0 through $columns {
+		.row_l_#{12 - $i}_push {
+			left: percentage(1 - ($i/12));
+			width: percentage($i/12);
+			position: relative;
+			background-color: Plum;
+		}
+	}
+	.hide_l {
+		display: none;
+	}
+
+}
+
+@media #{$mediumscreen} {
+	@for $i from 1 through $columns {
+		.row_m_#{$i} {
+			width: percentage($i/12);
+			background-color: green;
+			float: left;
+		}
+	}
+	@for $i from 0 through $columns {
+		.row_m_#{12 - $i}_push {
+			left: percentage(1 - ($i/12));
+			width: percentage($i/12);
+			position: relative;
+			background-color: LightGreen;
+		}
+	}
+	.hide_m {
+		display: none;
+	}
+}
+
+@media #{$smallscreen} {
+	@for $i from 1 through $columns {
+		.row_s_#{$i} {
+			width: percentage($i/12);
+			background-color: blue;
+			float: left;
+		}
+	}
+	@for $i from 0 through $columns {
+		.row_s_#{12 - $i}_push {
+			left: percentage(1 - ($i/12));
+			width: percentage($i/12);
+			position: relative;
+			background-color: LightBlue;
+		}
+	}
+	.hide_s {
+		display: none;
+	}
+	.show_s {
+		display: block;
+	}
+}

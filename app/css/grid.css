@@ -1,0 +1,365 @@
+/* screen sizes - colors left in there for testing purposes */
+.container {
+  width: 100%;
+  max-width: 993px;
+  margin: 10px auto; }
+
+.row:before,
+.row:after {
+  content: "";
+  display: table;
+  clear: both; }
+
+/* Grid System built from scss/grid.scss */
+@media only screen and (min-width: 993px) {
+  .row_l_1 {
+    width: 8.33333%;
+    background-color: purple;
+    float: left; }
+  .row_l_2 {
+    width: 16.66667%;
+    background-color: purple;
+    float: left; }
+  .row_l_3 {
+    width: 25%;
+    background-color: purple;
+    float: left; }
+  .row_l_4 {
+    width: 33.33333%;
+    background-color: purple;
+    float: left; }
+  .row_l_5 {
+    width: 41.66667%;
+    background-color: purple;
+    float: left; }
+  .row_l_6 {
+    width: 50%;
+    background-color: purple;
+    float: left; }
+  .row_l_7 {
+    width: 58.33333%;
+    background-color: purple;
+    float: left; }
+  .row_l_8 {
+    width: 66.66667%;
+    background-color: purple;
+    float: left; }
+  .row_l_9 {
+    width: 75%;
+    background-color: purple;
+    float: left; }
+  .row_l_10 {
+    width: 83.33333%;
+    background-color: purple;
+    float: left; }
+  .row_l_11 {
+    width: 91.66667%;
+    background-color: purple;
+    float: left; }
+  .row_l_12 {
+    width: 100%;
+    background-color: purple;
+    float: left; }
+  .row_l_12_push {
+    left: 100%;
+    width: 0%;
+    position: relative;
+    background-color: Plum; }
+  .row_l_11_push {
+    left: 91.66667%;
+    width: 8.33333%;
+    position: relative;
+    background-color: Plum; }
+  .row_l_10_push {
+    left: 83.33333%;
+    width: 16.66667%;
+    position: relative;
+    background-color: Plum; }
+  .row_l_9_push {
+    left: 75%;
+    width: 25%;
+    position: relative;
+    background-color: Plum; }
+  .row_l_8_push {
+    left: 66.66667%;
+    width: 33.33333%;
+    position: relative;
+    background-color: Plum; }
+  .row_l_7_push {
+    left: 58.33333%;
+    width: 41.66667%;
+    position: relative;
+    background-color: Plum; }
+  .row_l_6_push {
+    left: 50%;
+    width: 50%;
+    position: relative;
+    background-color: Plum; }
+  .row_l_5_push {
+    left: 41.66667%;
+    width: 58.33333%;
+    position: relative;
+    background-color: Plum; }
+  .row_l_4_push {
+    left: 33.33333%;
+    width: 66.66667%;
+    position: relative;
+    background-color: Plum; }
+  .row_l_3_push {
+    left: 25%;
+    width: 75%;
+    position: relative;
+    background-color: Plum; }
+  .row_l_2_push {
+    left: 16.66667%;
+    width: 83.33333%;
+    position: relative;
+    background-color: Plum; }
+  .row_l_1_push {
+    left: 8.33333%;
+    width: 91.66667%;
+    position: relative;
+    background-color: Plum; }
+  .row_l_0_push {
+    left: 0%;
+    width: 100%;
+    position: relative;
+    background-color: Plum; }
+  .hide_l {
+    display: none; } }
+
+@media only screen and (max-width: 992px) {
+  .row_m_1 {
+    width: 8.33333%;
+    background-color: green;
+    float: left; }
+  .row_m_2 {
+    width: 16.66667%;
+    background-color: green;
+    float: left; }
+  .row_m_3 {
+    width: 25%;
+    background-color: green;
+    float: left; }
+  .row_m_4 {
+    width: 33.33333%;
+    background-color: green;
+    float: left; }
+  .row_m_5 {
+    width: 41.66667%;
+    background-color: green;
+    float: left; }
+  .row_m_6 {
+    width: 50%;
+    background-color: green;
+    float: left; }
+  .row_m_7 {
+    width: 58.33333%;
+    background-color: green;
+    float: left; }
+  .row_m_8 {
+    width: 66.66667%;
+    background-color: green;
+    float: left; }
+  .row_m_9 {
+    width: 75%;
+    background-color: green;
+    float: left; }
+  .row_m_10 {
+    width: 83.33333%;
+    background-color: green;
+    float: left; }
+  .row_m_11 {
+    width: 91.66667%;
+    background-color: green;
+    float: left; }
+  .row_m_12 {
+    width: 100%;
+    background-color: green;
+    float: left; }
+  .row_m_12_push {
+    left: 100%;
+    width: 0%;
+    position: relative;
+    background-color: LightGreen; }
+  .row_m_11_push {
+    left: 91.66667%;
+    width: 8.33333%;
+    position: relative;
+    background-color: LightGreen; }
+  .row_m_10_push {
+    left: 83.33333%;
+    width: 16.66667%;
+    position: relative;
+    background-color: LightGreen; }
+  .row_m_9_push {
+    left: 75%;
+    width: 25%;
+    position: relative;
+    background-color: LightGreen; }
+  .row_m_8_push {
+    left: 66.66667%;
+    width: 33.33333%;
+    position: relative;
+    background-color: LightGreen; }
+  .row_m_7_push {
+    left: 58.33333%;
+    width: 41.66667%;
+    position: relative;
+    background-color: LightGreen; }
+  .row_m_6_push {
+    left: 50%;
+    width: 50%;
+    position: relative;
+    background-color: LightGreen; }
+  .row_m_5_push {
+    left: 41.66667%;
+    width: 58.33333%;
+    position: relative;
+    background-color: LightGreen; }
+  .row_m_4_push {
+    left: 33.33333%;
+    width: 66.66667%;
+    position: relative;
+    background-color: LightGreen; }
+  .row_m_3_push {
+    left: 25%;
+    width: 75%;
+    position: relative;
+    background-color: LightGreen; }
+  .row_m_2_push {
+    left: 16.66667%;
+    width: 83.33333%;
+    position: relative;
+    background-color: LightGreen; }
+  .row_m_1_push {
+    left: 8.33333%;
+    width: 91.66667%;
+    position: relative;
+    background-color: LightGreen; }
+  .row_m_0_push {
+    left: 0%;
+    width: 100%;
+    position: relative;
+    background-color: LightGreen; }
+  .hide_m {
+    display: none; } }
+
+@media only screen and (max-width: 768px) {
+  .row_s_1 {
+    width: 8.33333%;
+    background-color: blue;
+    float: left; }
+  .row_s_2 {
+    width: 16.66667%;
+    background-color: blue;
+    float: left; }
+  .row_s_3 {
+    width: 25%;
+    background-color: blue;
+    float: left; }
+  .row_s_4 {
+    width: 33.33333%;
+    background-color: blue;
+    float: left; }
+  .row_s_5 {
+    width: 41.66667%;
+    background-color: blue;
+    float: left; }
+  .row_s_6 {
+    width: 50%;
+    background-color: blue;
+    float: left; }
+  .row_s_7 {
+    width: 58.33333%;
+    background-color: blue;
+    float: left; }
+  .row_s_8 {
+    width: 66.66667%;
+    background-color: blue;
+    float: left; }
+  .row_s_9 {
+    width: 75%;
+    background-color: blue;
+    float: left; }
+  .row_s_10 {
+    width: 83.33333%;
+    background-color: blue;
+    float: left; }
+  .row_s_11 {
+    width: 91.66667%;
+    background-color: blue;
+    float: left; }
+  .row_s_12 {
+    width: 100%;
+    background-color: blue;
+    float: left; }
+  .row_s_12_push {
+    left: 100%;
+    width: 0%;
+    position: relative;
+    background-color: LightBlue; }
+  .row_s_11_push {
+    left: 91.66667%;
+    width: 8.33333%;
+    position: relative;
+    background-color: LightBlue; }
+  .row_s_10_push {
+    left: 83.33333%;
+    width: 16.66667%;
+    position: relative;
+    background-color: LightBlue; }
+  .row_s_9_push {
+    left: 75%;
+    width: 25%;
+    position: relative;
+    background-color: LightBlue; }
+  .row_s_8_push {
+    left: 66.66667%;
+    width: 33.33333%;
+    position: relative;
+    background-color: LightBlue; }
+  .row_s_7_push {
+    left: 58.33333%;
+    width: 41.66667%;
+    position: relative;
+    background-color: LightBlue; }
+  .row_s_6_push {
+    left: 50%;
+    width: 50%;
+    position: relative;
+    background-color: LightBlue; }
+  .row_s_5_push {
+    left: 41.66667%;
+    width: 58.33333%;
+    position: relative;
+    background-color: LightBlue; }
+  .row_s_4_push {
+    left: 33.33333%;
+    width: 66.66667%;
+    position: relative;
+    background-color: LightBlue; }
+  .row_s_3_push {
+    left: 25%;
+    width: 75%;
+    position: relative;
+    background-color: LightBlue; }
+  .row_s_2_push {
+    left: 16.66667%;
+    width: 83.33333%;
+    position: relative;
+    background-color: LightBlue; }
+  .row_s_1_push {
+    left: 8.33333%;
+    width: 91.66667%;
+    position: relative;
+    background-color: LightBlue; }
+  .row_s_0_push {
+    left: 0%;
+    width: 100%;
+    position: relative;
+    background-color: LightBlue; }
+  .hide_s {
+    display: none; }
+  .show_s {
+    display: block; } }
