@@ -1,6 +1,16 @@
 @import "helpers";
 
+//scss for the navbar section
+
 .navbar-section {
+	#navdropdown {
+		@media #{$smallscreen} {
+			position: fixed;
+			top: 0;
+			right: 0;
+			left: 0;
+		}
+	}
 	nav > div {
 		overflow: hidden;
 		margin: 0 auto;
@@ -16,7 +26,7 @@
 			#nav-height {
 				height: 60px;
 			}
-			position: absolute;
+			position: relative;
 			z-index: 1;
 			width: 100%;
 			&#navdropdown{
@@ -80,7 +90,7 @@
 				padding: 10px 20px;
 			}
 			@media #{$largescreen} {
-				padding: 10px 20px;
+			padding: 10px 32px 10px 8px;
 			}
 			@media #{$mediumscreen} {
 				padding: 10px 16px 10px 6px;
@@ -108,7 +118,6 @@
 						background-color: $small-blue;
 					}
 					color: $white;
-					border-radius: 0 6px 0 0;
 				}
 			}
 		}
@@ -129,7 +138,18 @@
 				// }
 				.dropdown-content {
 					display: block;
+					z-index: 1;
+					border-radius: 4px 4px 4px 4px;
+					a:first-child {
+						border-radius: 0 4px 0 0;
+					}
+					a:last-of-type {
+						border-radius: 0 0 4px 4px;
+					}
 				}
+			}
+			.dropdown-corner:first-child {
+				border-radius: 4px 4px 0 0;
 			}
 		}
 		li.dropdown {
@@ -141,13 +161,13 @@
 		.dropdown-content {
 			display: none;
 			position: absolute;
-			background-color: $menu-blue;
+			background-color: $menu-background;
 			min-width: 150px;
 			box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 			a {
 				color: black;
 				@media #{$xlargescreen} {
-					padding: 4px 69px 4px 8px;
+					padding: 4px 34px 4px 21px;
 				}
 				@media #{$largescreen} {
 					padding: 4px 31px 4px 8px;
@@ -217,7 +237,7 @@
 			}
 			@media #{$xlargescreen} {
 				margin-top: -20px;
-				margin-right: 47px;
+				margin-right: 13px;
 			}
 			@media #{$largescreen} {
 				margin-top: -20px;
@@ -265,7 +285,7 @@
 					width: 20px;
 					height: 3px;
 					background-color: white;
-					border-radius: 20px / 15px;
+					border-radius: 20px / 20px;
 				}
 				&::after {
 					-webkit-transform: rotate(45deg);
@@ -352,5 +372,20 @@
 		.tfclear{
 			clear:both;
 		}
+	}
+	hr {
+		display: block;
+		position: relative;
+		padding: 0;
+		margin: 8px auto 50px auto;
+		height: 0;
+		width: 97%;
+		max-height: 0;
+		font-size: 1px;
+		line-height: 0;
+		clear: both;
+		border: none;
+		border-top: 1px solid $line-color;
+		/*border-bottom: 1px solid #ffffff;*/
 	}
 }

@@ -1,4 +1,6 @@
-/* screen sizes - colors left in there for testing purposes */
+// screen sizes - colors left in there for testing purposes
+// these will be used throughout- for the grid & media queries
+
 $xlargescreen: "only screen and (min-width: 1150px)"; //yellow
 $largescreen: "only screen and (min-width: 993px) and (max-width: 1149px)"; //purple
 $mediumscreen: "only screen and (min-width: 769px) and (max-width: 992px)";	//green
@@ -6,7 +8,9 @@ $smallscreen: "only screen and (max-width: 768px)";	//blue
 $xsmallscreen: "only screen and (max-width: 530px)";	//orange
 $xxsmallscreen: "only screen and (max-width: 400px)";	//red
 
-/* colors */
+// colors
+// helps keep the colors consistent yo!
+
 $gray: #f6f6f6;
 $black: #2c2c2c;
 $white: #ffffff;
@@ -16,4 +20,5 @@ $light-blue: #73abe4;
 $menu-blue: #507aa5;
 $hover-blue: #466a90;
 $small-blue: #5b86b3;
+$menu-background: rgba(0, 0, 0, 0.14);
 

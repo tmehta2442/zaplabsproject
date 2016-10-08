@@ -11,10 +11,10 @@ function show(target, drop) {
 	document.getElementById(target).style.display = "block";
 	
 
-	if (document.getElementById("nav-height").style.height == "512px") {
+	if (document.getElementById("nav-height").style.height == "480px") {
 		document.getElementById("nav-height").style.height = "60px";
 	} else {
-		document.getElementById("nav-height").style.height = "512px"
+		document.getElementById("nav-height").style.height = "480px"
 	}
 }
 
