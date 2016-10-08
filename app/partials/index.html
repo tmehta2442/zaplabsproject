@@ -1,24 +1,28 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <title>ZapLabs Exercise</title>
-  <meta name="description" content="Music Browser">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!--build:css css/styles.min.css-->
-  <link rel="stylesheet" href="css/styles.css">
-  <link rel="stylesheet" href="css/grid.css">
-  <!--endbuild-->
-  <!--build:js js/main.min.js-->
-  <script src="js/main.js"></script>
-  <script src="js/tbd.js"></script>
-  <!-- endbuild -->
-  <!--[if lt IE 9]>
-    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-  <![endif]-->
+	<meta charset="utf-8">
+	<title>ZapLabs Exercise</title>
+	<meta name="description" content="ZapLabs Exercise">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!--build:css css/styles.min.css-->
+	<link rel="stylesheet" href="css/styles.css">
+	<link rel="stylesheet" href="css/navbar.css">
+	<link rel="stylesheet" href="css/grid.css">
+	<!--endbuild-->
+	<!--build:js js/main.min.js-->
+	<script src="js/main.js"></script>
+	<script src="js/navbar.js"></script>
+	<!-- endbuild -->
+	<!--[if lt IE 9]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
 </head>
 
 <body>
-  @@include("./test.html")
+	<div class="body-container">
+		@@include("./navbar.html")
+		<!-- @@include("./test.html") -->
+	</div>
 </body>
 </html>

@@ -14,70 +14,125 @@
 
 /* Grid System built from scss/grid.scss */
 $columns: 12;
+$list: xl l m l sx xxs;
 
-@media #{$largescreen} {
+@media #{$xlargescreen} {
 	@for $i from 1 through $columns {
-		.row_l_#{$i} {
+		.row-xl-#{$i} {
 			width: percentage($i/12);
-			background-color: purple;
 			float: left;
 		}
 	}
 	@for $i from 0 through $columns {
-		.row_l_#{12 - $i}_push {
+		.row-xl-#{12 - $i}-push {
 			left: percentage(1 - ($i/12));
 			width: percentage($i/12);
 			position: relative;
-			background-color: Plum;
 		}
 	}
-	.hide_l {
+	@each $size in $list {
+		.hide-#{$size} {
+			display: none;
+		}
+	}
+	.show-xl {
+		display: inline-block !important;
+	}
+	.show-only-s {
 		display: none;
 	}
+}
 
+@media #{$largescreen} {
+	@for $i from 1 through $columns {
+		.row-l-#{$i} {
+			width: percentage($i/12);
+			//background-color: purple;
+			float: left;
+		}
+	}
+	@for $i from 0 through $columns {
+		.row-l-#{12 - $i}-push {
+			left: percentage(1 - ($i/12));
+			width: percentage($i/12);
+			position: relative;
+			//background-color: Plum;
+		}
+	}
+	@each $size in $list {
+		.hide-#{$size} {
+			display: none;
+		}
+	}
+	.show-l {
+		display: inline-block;
+	}
+	.show-only-s {
+		display: none;
+	}
+	.show-only-xl {
+		display: none;
+	}
 }
 
 @media #{$mediumscreen} {
 	@for $i from 1 through $columns {
-		.row_m_#{$i} {
+		.row-m-#{$i} {
 			width: percentage($i/12);
-			background-color: green;
+			// background-color: green;
 			float: left;
 		}
 	}
 	@for $i from 0 through $columns {
-		.row_m_#{12 - $i}_push {
+		.row-m-#{12 - $i}-push {
 			left: percentage(1 - ($i/12));
 			width: percentage($i/12);
 			position: relative;
-			background-color: LightGreen;
+			//background-color: LightGreen;
 		}
 	}
-	.hide_m {
+	@each $size in $list {
+		.hide-#{$size} {
+			display: none;
+		}
+	}
+	.show-m {
+		display: inline-block;
+	}
+	.show-only-s {
+		display: none;
+	}
+	.show-only-xl {
 		display: none;
 	}
 }
 
 @media #{$smallscreen} {
 	@for $i from 1 through $columns {
-		.row_s_#{$i} {
+		.row-s-#{$i} {
 			width: percentage($i/12);
-			background-color: blue;
+			//background-color: blue;
 			float: left;
 		}
 	}
 	@for $i from 0 through $columns {
-		.row_s_#{12 - $i}_push {
+		.row-s-#{12 - $i}-push {
 			left: percentage(1 - ($i/12));
 			width: percentage($i/12);
 			position: relative;
-			background-color: LightBlue;
+			//background-color: LightBlue;
 		}
 	}
-	.hide_s {
+	@each $size in $list {
+		.hide-#{$size} {
+			display: none;
+		}
+	}
+	.hide-s {
 		display: none;
 	}
-	.show_s {
+	.show-only-s {
 		display: block;
 	}
 }
+

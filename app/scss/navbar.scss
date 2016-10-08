@@ -1,0 +1,356 @@
+@import "helpers";
+
+.navbar-section {
+	nav > div {
+		overflow: hidden;
+		margin: 0 auto;
+		@media #{$mediumscreen} {
+			height: 44px;
+			width: 100%;
+		}
+		@media #{$smallscreen} {
+			background-color: $dark-blue;
+			height: 60px
+		}
+		@media #{$smallscreen} {
+			#nav-height {
+				height: 60px;
+			}
+			position: absolute;
+			z-index: 1;
+			width: 100%;
+			&#navdropdown{
+				padding-left: 15px;
+				&.nav-height {
+					@media #{$smallscreen} {
+						height: 280px;
+					}
+					@media #{$xxsmallscreen} {
+						height: 253px;
+					}
+				}
+			}
+		}
+		ul {
+			margin: 0;
+			padding: 0;
+			@media #{$smallscreen} {
+				margin-top: 0px;
+			}
+			li {
+				display: inline-block;
+				list-style-type: none;
+				&.menu-drop {
+					display: block;
+					margin-bottom: 17px;
+
+					a {
+						text-decoration: none;
+						letter-spacing: 3px;
+						font-weight: 500;
+						@media #{$smallscreen} {
+							font-size: 19px;
+							display: block;
+							margin-bottom: 0;
+							text-align: center;
+						}
+					}
+				}
+			}
+			&.centered-nav {
+				@media #{$xlargescreen} {
+					text-align: -webkit-left !important;
+				}
+				@media #{$largescreen} {
+					text-align: center;
+					padding-top: 10px;
+				}
+				@media #{$mediumscreen} {
+					text-align: center;
+					padding-top: 10px;
+				}
+			}
+		}
+		> ul > li > a, > ul > div > li > a, > ul > li > div > a {
+			font-size: 12px;
+			color: $black;
+			display: block;
+			line-height: 2em;
+			@media #{$xlargescreen} {
+				padding: 10px 20px;
+			}
+			@media #{$largescreen} {
+				padding: 10px 20px;
+			}
+			@media #{$mediumscreen} {
+				padding: 10px 16px 10px 6px;
+				// padding: 10px 15% 10px 15%;
+			}
+			@media #{$smallscreen} {
+				padding: 0;
+			}
+			text-decoration: none;
+		}
+		li {
+			a {
+				display: inline-block;
+				color: white;
+				text-align: center;
+				padding: 14px 16px;
+				text-decoration: none;
+			}
+			&:hover {
+				//ackground-color: $menu-blue;
+				color: $white;
+				a {
+					background-color: $menu-blue;
+					@media #{$smallscreen} {
+						background-color: $small-blue;
+					}
+					color: $white;
+					border-radius: 0 6px 0 0;
+				}
+			}
+		}
+		// .dropbtn {
+		// 	display: inline-block;
+		// 	color: $white;
+		// 	text-align: center;
+		// 	padding: 14px 16px;
+		// 	text-decoration: none;
+		// }
+		.dropdown {
+			&:hover {
+				// .dropbtn {
+				// 	background-color: $menu-blue;
+				// 	color: $white;
+				// 	padding-top: 0px;
+
+				// }
+				.dropdown-content {
+					display: block;
+				}
+			}
+		}
+		li.dropdown {
+			display: inline-block;
+			a {
+				padding-top: 0px;
+			}
+		}
+		.dropdown-content {
+			display: none;
+			position: absolute;
+			background-color: $menu-blue;
+			min-width: 150px;
+			box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+			a {
+				color: black;
+				@media #{$xlargescreen} {
+					padding: 4px 69px 4px 8px;
+				}
+				@media #{$largescreen} {
+					padding: 4px 31px 4px 8px;
+				}
+				@media #{$mediumscreen} {
+					padding: 4px 31px 4px 8px;
+				}								
+				text-decoration: none;
+				display: block;
+				text-align: left;
+				&:hover {
+					background-color: $hover-blue;
+					+ .arrow-right {
+						visibility: visible;
+					}
+				}
+			}
+			&.dropdown-content-search {
+				background-color: transparent;
+				-webkit-box-shadow: none;
+				-moz-box-shadow: none;
+				box-shadow: none;
+				margin-left:-204px;
+			}
+		}
+
+		.search-icon {
+			background-image: url(../images/search-icon.png);
+			background-size: 100% 100%;
+			height: 18px;
+			width: 19px;
+			padding: inherit;
+			@media #{$smallscreen} {
+				height: 15px;
+				width: 15px;
+				margin-left: 115%;
+			}
+		}
+		.arrow-down {
+			background: url(../images/arrow-down.png) no-repeat top left;
+			background-size: 100% 100%;
+			height: 9px;
+			width: 9px;
+			float: right;
+			@media #{$xlargescreen} {
+				margin-top: -25px;
+				margin-right: 8px;
+			}
+			@media #{$largescreen} {
+				margin-top: -25px;
+				margin-right: 7px;
+			}
+			@media #{$mediumscreen} {
+				margin-top: -25px;
+				margin-right: 6px;
+			}
+		}
+		.arrow-right {
+			background: url(../images/arrow-right.png) no-repeat top left;
+			background-size: 100% 100%;
+			height: 9px;
+			width: 9px;
+			float: right;
+			visibility: hidden;
+			&:hover {
+				visibility: visible;
+			}
+			@media #{$xlargescreen} {
+				margin-top: -20px;
+				margin-right: 47px;
+			}
+			@media #{$largescreen} {
+				margin-top: -20px;
+				margin-right: 6px;
+			}
+			@media #{$mediumscreen} {
+				margin-top: -19px;
+				margin-right: 9px;
+			}
+		}
+		.hamburger {
+			position: relative;
+			padding-left: 1.25em;
+			margin-top: 14px;
+			&:before {
+				content: "";
+				position: absolute;
+				border-radius: 20px / 15px;
+				left: 0;
+				top: 4px;
+				width: 20px;
+				height: 3px;
+				background: white;
+				box-shadow: 
+					0 6px 0 0 white,
+					0 12px 0 0 white;
+			}
+		}
+		#dropdown {
+			display: none;
+			margin-top: 14px;
+			background-color: $dark-blue;
+			a {
+				color: white;
+			}
+			.dropdown-mark {
+				margin-bottom: 22px;
+
+				&::after, &::before {
+					position: absolute;
+					top: 9px;
+					left: 0px;
+					content: '';
+					display: block;
+					width: 20px;
+					height: 3px;
+					background-color: white;
+					border-radius: 20px / 15px;
+				}
+				&::after {
+					-webkit-transform: rotate(45deg);
+					-moz-transform: rotate(45deg);
+					-ms-transform: rotate(45deg);
+					-o-transform: rotate(45deg);
+					transform: rotate(45deg);
+				}
+				&::before {
+					-webkit-transform: rotate(-45deg);
+					-moz-transform: rotate(-45deg);
+					-ms-transform: rotate(-45deg);
+					-o-transform: rotate(-45deg);
+					transform: rotate(-45deg);
+				}
+			}
+		}
+		// for the search bar
+		input:focus {outline:none;}
+		::-webkit-input-placeholder {
+				color: $black;
+				font-size: 12px;
+		}
+
+		:-moz-placeholder { /* Firefox 18- */
+				color: $black;
+				font-size: 12px;  
+		}
+
+		::-moz-placeholder {  /* Firefox 19+ */
+				color: $black;
+				font-size: 12px;  
+		}
+
+		:-ms-input-placeholder {  
+				color: $black;
+				font-size: 12px;  
+		}
+
+		
+		#tfheader {
+			margin-top: 9px;
+		}
+
+		.search-position {
+			@media #{$xlargescreen} {
+				margin-left: 25px;
+			}		
+		}
+		.tftextinput{
+			margin: 0;
+			padding: 5px 15px;
+			font-size:12px;
+			border:1px solid $line-color;
+			border-radius: 8px 0 0 8px;
+			width: 164px;
+			background-color: #fafafa;
+
+		}
+		.tfbutton {
+			margin: 0;
+			padding: 5px 15px;
+			font-family: Arial, Helvetica, sans-serif;
+			font-size:13px;
+			outline: none;
+			cursor: pointer;
+			text-align: center;
+			text-decoration: none;
+			color: #ffffff;
+			border: 1px solid $light-blue; border-right:0px;
+			background: $light-blue;
+			border-top-right-radius: 5px 5px;
+			border-bottom-right-radius: 5px 5px;
+		}
+		.tfbutton:hover {
+			text-decoration: none;
+			border: 1px solid $dark-blue; border-right:0px;
+			background: $dark-blue;
+		}
+		/* Fixes submit button height problem in Firefox */
+		.tfbutton::-moz-focus-inner {
+			border: 0;
+		}
+		.tfclear{
+			clear:both;
+		}
+	}
+}

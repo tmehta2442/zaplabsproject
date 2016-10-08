@@ -1,3 +1,24 @@
-h1 {
-	color: red;
+@import "helpers";
+@import "fonts";
+
+body {
+	background-color: $gray;
+	margin: 0 40px;
+	@media #{$smallscreen} {
+		margin: 0 auto;
+	}
+	font-family: Geneva, Tahoma, Verdana, sans-serif;
+	-webkit-font-smoothing: antialiased !important;
+}
+
+.body-container {
+	max-width: 1067px;
+	margin: 30px auto;
+	background-color: $white;
+	border: 1px solid $line-color;
+	border-radius: 6px;
+	@media #{$smallscreen} {
+		margin: 0 auto;
+		border: 0;
+	}
 }
