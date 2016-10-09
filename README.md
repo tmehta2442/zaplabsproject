@@ -1,5 +1,5 @@
 # ZapLabs
-This is my submission for ZapLabs. The project was a lot of fun: got to build using gulp, create my own grid system and deploy the site to GitHub pages.
+This is my submission for ZapLabs. The project was a lot of fun: got to build using gulp, create my own grid system and deployed the site to GitHub pages.
 
 You can view a live version of the project [here](https://tmehta2442.github.io/zaplabsproject/).
 
@@ -7,7 +7,7 @@ You can view a live version of the project [here](https://tmehta2442.github.io/z
 If you want to build this on your own machine verify that you have at least Node v4.4.4, NPM v3.8.3 and Gulp 3.9.1 (this current build was built using Node v5.10.1, NPM v3.8.3 and Gulp 3.9.1 and those versions are recommended for this project). If you have neither, please go [here for Node & NPM](https://docs.npmjs.com/getting-started/installing-node) and [here for Gulp](https://www.npmjs.com/package/gulp-install)
 
 ### Gulping
-Once you have verified that you have the above installed and gtg go to the folder where the zaplabs project resides and verify that you see *package.json*.
+Once you have verified that you have the above installed and gtg go to the folder where the *zaplabsproject* resides and verify that you see *package.json*.
 
 Next
 ```
@@ -44,14 +44,14 @@ Sites I used for help and inspiration for this project
 * [http://caniuse.com/](http://caniuse.com/)
 
 ### Access for All
-I have created a GitHub account with access privledges to this repo for those who may not have one
+I have created a GitHub account with access privileges to this repo for those who may not have one
 ```
 ZapTJ //username
 this1goesherethat1goesthere //password
 ```
 
 ## Thanks!
-This was a lot of fun and I hope to hear back soon. I can be reached at tj@tejas-mehta.com. You can also find some more projects and other links on my [homepage](http:www.tejas-mehta.com) (I havent updated it in awhile!).
+This was a lot of fun and I hope to hear back soon. I can be reached at tj@tejas-mehta.com. You can also find some more projects and other links on my [homepage](http:www.tejas-mehta.com) (I haven’t updated it in awhile!).
 
 Best,
 TJ
