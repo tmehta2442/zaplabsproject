@@ -1,0 +1,23 @@
+@import "helpers";
+
+footer {
+	@media #{$xlargescreen} {
+		padding-left: 6%;
+	}
+	@media #{$largescreen} {
+		padding-left: 2%;
+	}
+	@media #{$mediumscreen} {
+		padding-left: 2%;
+	}
+	a {
+		color: $content-text-color;
+		text-decoration: none;
+	}
+	@media #{$smallscreen} {
+		p {
+			text-align: center;
+
+		}
+	}
+}

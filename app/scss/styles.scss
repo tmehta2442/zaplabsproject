@@ -19,16 +19,16 @@ body {
 	border: 1px solid $line-color;
 	border-radius: 6px;
 	@media #{$xlargescreen} {
-		height: 770px;
+		height: 810px;
 	}
 	@media #{$largescreen} {
 		height: 1520px;
 	}
 	@media #{$mediumscreen} {
-		height: 2340px;
+		height: 2420px;
 	}
 	@media #{$smallscreen} {
-		height: 2340px;
+		height: 2520px;
 		margin: 0 auto;
 		border: 0;
 	}
