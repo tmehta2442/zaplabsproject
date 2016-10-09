@@ -42,7 +42,7 @@ $list: xl l m l sx xxs;
 	}
 // override to show
 	.show-xl {
-		display: inline-block !important;
+		display: inherit !important;
 	}
 // show only in small 
 	.show-only-s {
@@ -73,7 +73,7 @@ $list: xl l m l sx xxs;
 		}
 	}
 	.show-l {
-		display: inline-block;
+		display: inherit;
 	}
 	.show-only-s {
 		display: none;
@@ -105,7 +105,7 @@ $list: xl l m l sx xxs;
 		}
 	}
 	.show-m {
-		display: inline-block;
+		display: inherit;
 	}
 	.show-only-s {
 		display: none;
@@ -135,6 +135,9 @@ $list: xl l m l sx xxs;
 		.hide-#{$size} {
 			display: none;
 		}
+	}
+	.show-s {
+		display: inherit;
 	}
 	.hide-s {
 		display: none;

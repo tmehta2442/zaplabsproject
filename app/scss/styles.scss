@@ -13,14 +13,24 @@ body {
 }
 
 .body-container {
-	max-width: 1067px;
 	margin: 30px auto;
+	max-width: 1067px;
 	background-color: $white;
 	border: 1px solid $line-color;
 	border-radius: 6px;
+	@media #{$xlargescreen} {
+		height: 770px;
+	}
+	@media #{$largescreen} {
+		height: 1520px;
+	}
+	@media #{$mediumscreen} {
+		height: 2340px;
+	}
 	@media #{$smallscreen} {
+		height: 2340px;
 		margin: 0 auto;
 		border: 0;
 	}
-	height: 1000px;
+	
 }

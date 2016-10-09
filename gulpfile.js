@@ -48,7 +48,7 @@ gulp.task('useref', function(){		//concatenates js/css into single file
 });
 
 gulp.task('images', function(){
-	return gulp.src('app/images/*.+(png|jpg|gif|svg)')		//optimize images
+	return gulp.src('app/images/*.+(png|jpg|gif|svg|ico)')		//optimize images
 	.pipe(cache(imagemin({
 		optimizationLevel: 12,
 		progressive: true,

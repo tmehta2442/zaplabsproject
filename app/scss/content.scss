@@ -1,5 +1,8 @@
 @import "helpers";
 .content-section {
+	@media #{$smallscreen} {
+		padding-top: 90px;
+	}
 
 	hr {
 		display: block;
@@ -7,14 +10,21 @@
 		padding: 0;
 		margin: 8px auto 50px auto;
 		height: 0;
-		width: 83%;
 		max-height: 0;
 		font-size: 1px;
 		line-height: 0;
 		clear: both;
 		border: none;
 		border-top: 1px solid $line-color;
-		/*border-bottom: 1px solid #ffffff;*/
+		@media #{$xlargescreen} {
+			width: 83%;
+		}
+		@media #{$largescreen} {
+			width: 100%; 
+		}
+		@media #{$smallscreen} {
+			width: 100%; 
+		}
 	}
 	h1 {
 		font-family: sans-serif; 
@@ -23,24 +33,71 @@
 		font-weight: 600;
 		margin: 0 auto;
 		letter-spacing: 0.001em;
+		@media #{$xlargescreen} {
+			text-align: inherit; 
+		}
+		@media #{$largescreen} {
+			text-align: center; 
+		}
+		@media #{$mediumscreen} {
+			text-align: center;
+			max-width: 500px;
+		}
+		@media #{$smallscreen} {
+			text-align: center;
+			max-width: 500px;
+		}
 	}
 	.side-bar {
 		margin-right: -1px;
 		border-right: 1px solid $line-color;
+		@media #{$smallscreen} {
+			border-right: 0;
+		}
 	}
 	.content-image {
-		background-image: url(../images/content-image.png);
-		width: 134px;
-		height: 134px;
+		@media #{$xlargescreen} {
+			background-image: url(../images/content-image.png);
+			width: 134px;
+			height: 134px;
+			padding: 4px;
+			border: 1px solid $box-border-color;
+		}
+		@media #{$largescreen} {
+			background-image: url(../images/content-image-l.png);
+			width: 240px;
+			height: 200px;
+			padding: 0;
+			border: 0;
+		}
+		@media #{$mediumscreen} {
+			background-image: url(../images/content-image-l.png);
+			width: 240px;
+			height: 200px;
+			padding: 0;
+			border: 0;
+		}
+		@media #{$smallscreen} {
+			background-image: url(../images/content-image-l.png);
+			width: 240px;
+			height: 200px;
+			padding: 0;
+			border: 0;
+		}
 		background-repeat: no-repeat;
 		background-position: center;
-		padding: 4px;
-		border: 1px solid $box-border-color;
+
 		position: relative;
 		@media #{$xlargescreen} {
 			margin: 0 0;
 		}
 		@media #{$largescreen} {
+			margin: 0 auto;
+		}
+		@media #{$mediumscreen} {
+			margin: 0 auto;
+		}
+		@media #{$smallscreen} {
 			margin: 0 auto;
 		}
 	}
@@ -57,7 +114,18 @@
 			left: 0;
 			width: 240px;
 		}	
-		
+		@media #{$mediumscreen} {
+			position: relative;
+			top: 0;
+			left: 0;
+			width: 240px;
+		}	
+		@media #{$smallscreen} {
+			position: relative;
+			top: 0;
+			left: 0;
+			width: 240px;
+		}			
 		height: 24px;
 		background-color: $content-color;
 		margin: 0 auto;
@@ -68,11 +136,31 @@
 	}
 	.right-content {
 		hr {
-			width: 100%;
 			margin: 0 auto;
+			@media #{$xlargescreen} {
+				width: 100%;
+			}
+			@media #{$largescreen} {
+				width: 95%;
+			}
+			@media #{$mediumscreen} {
+				width: 95%;
+			}
+			@media #{$smallscreen} {
+				width: 95%;
+			}
 		}
 		.headline-space {
 			margin-bottom: 16px;
+			@media #{$largescreen} {
+				margin-top: 18px;
+			}
+			@media #{$mediumscreen} {
+				margin-top: 18px;
+			}
+			@media #{$smallscreen} {
+				margin-top: 18px;
+			}
 		}
 		.bar-space {
 			padding-top: 5px;
@@ -85,11 +173,31 @@
 				font-weight: 400;
 				color: $content-color;
 				margin: 0 auto;
+				@media #{$largescreen} {
+					padding-left: 20px;
+				}
+				@media #{$mediumscreen} {
+					padding-left: 20px;
+				}	
+				@media #{$smallscreen} {
+					padding-left: 20px;
+				}					
 			}
 		}
 		p {
 			font-size: 11px;
-			margin: 0 auto;
+			@media #{$xlargescreen} {
+				margin: 0 auto;
+			}
+			@media #{$largescreen} {
+				margin: 0 auto 0 20px;
+			}	
+			@media #{$mediumscreen} {
+				margin: 0 auto 0 20px;
+			}
+			@media #{$smallscreen} {
+				margin: 0 auto 0 20px;
+			}		
 		}
 		.arrow {
 			background: url(../images/arrow-right.png) no-repeat;
@@ -98,10 +206,32 @@
 			width: 9px;
 			position: absolute;
 			&.arrow-right {
-				margin: 3px 0 0 40px;
+				@media #{$xlargescreen} {
+					margin: 3px 0 0 40px;
+				}
+				@media #{$largescreen} {
+					margin: 3px 0 0 70px;
+				}		
+				@media #{$mediumscreen} {
+					margin: 3px 0 0 70px;
+				}
+				@media #{$smallscreen} {
+					margin: 3px 0 0 70px;
+				}					
 			}
 			&.arrow-left {
-				margin: 3px 0 0 403px
+				@media #{$xlargescreen} {
+					margin: 3px 0 0 403px;
+				}
+				@media #{$largescreen} {
+					margin: 3px 0 0 58.6%;
+				}	
+				@media #{$mediumscreen} {
+					margin: 3px 0 0 85.1%;
+				}
+				@media #{$smallscreen} {
+					margin: 3px 0 0 90.1%;
+				}				
 			}			
 		}
 		// .arrow-right {
@@ -118,8 +248,29 @@
 		}
 		.align-right {
 			float: right;
+			@media #{$largescreen} {
+				padding-right: 20px;
+			}
+			@media #{$mediumscreen} {
+				padding-right: 20px;
+			}
+			@media #{$smallscreen} {
+				padding-right: 5%;
+				margin-left: 0;
+			}
 			&.arrow-space {
-				padding-right: 17px;
+				@media #{$xlargescreen} {
+					padding-right: 17px;
+				}
+				@media #{$largescreen} {
+					padding-right: 50px;
+				}			
+				@media #{$mediumscreen} {
+					padding-right: 9%;
+				}
+				@media #{$smallscreen} {
+					padding-right: 15%;
+				}	
 			}
 		}
 		.align-left {
@@ -128,5 +279,63 @@
 				padding-right: 22px;
 			}
 		}
+	}
+	.placer-image-a {
+		@media #{$xlargescreen} {
+			background-image: url(../images/placer-image-a.png);
+			width: 269px;
+			height: 170px;
+			margin: 0 10% 3% 12%;
+		}
+		@media #{$largescreen} {
+			background-image: url(../images/placer-image-a.png);
+			width: 100%;
+			height: 170px;
+			margin: 0 0 3% 0;
+		}
+		@media #{$mediumscreen} {
+			background-image: url(../images/placer-image-a-2x.png);
+			width: 100%;
+			height: 340px;
+			margin: 0 0 3% 0;
+		}
+		@media #{$smallscreen} {
+			background-image: url(../images/placer-image-a-2x.png);
+			width: 100%;
+			height: 340px;
+			margin: 0 0 3% 0;
+		}
+		background-repeat: no-repeat;
+		background-position: center;
+		position: relative;
+	}
+	.placer-image-b {
+		@media #{$xlargescreen} {
+			background-image: url(../images/placer-image-b.png);
+			width: 269px;
+			height: 215px;
+			margin: 0 10% 3% 12%;
+		}
+		@media #{$largescreen} {
+			background-image: url(../images/placer-image-b.png);
+			width: 100%;
+			height: 215px;
+			margin: 0 0 3% 0;
+		}
+		@media #{$mediumscreen} {
+			background-image: url(../images/placer-image-b-2x.png);
+			width: 100%;
+			height: 430px;
+			margin: 0 0 3% 0;
+		}
+		@media #{$smallscreen} {
+			background-image: url(../images/placer-image-b-2x.png);
+			width: 100%;
+			height: 430px;
+			margin: 0 0 3% 0;
+		}
+		background-repeat: no-repeat;
+		background-position: center;
+		position: relative;
 	}
 }
