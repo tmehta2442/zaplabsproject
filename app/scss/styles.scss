@@ -1,5 +1,4 @@
 @import "helpers";
-@import "fonts";
 
 body {
 	background-color: $gray;
@@ -9,7 +8,6 @@ body {
 	}
 	font-family: Geneva, Tahoma, Verdana, sans-serif;
 	-webkit-font-smoothing: antialiased !important;
-
 }
 
 .body-container {
@@ -19,7 +17,7 @@ body {
 	border: 1px solid $line-color;
 	border-radius: 6px;
 	@media #{$xlargescreen} {
-		height: 810px;
+		height: 820px;
 	}
 	@media #{$largescreen} {
 		height: 1520px;
