@@ -35,13 +35,13 @@ If you want to see the built version of this page go [here](https://github.com/t
 ### Cool Sites
 Sites I used for help and inspiration for this project
 
-*[https://paulferrett.com/fontawesome-favicon/](https://paulferrett.com/fontawesome-favicon/)
-*[https://www.iconfinder.com/](https://www.iconfinder.com/)
-*[https://css-tricks.com/getting-started-gulp/](https://css-tricks.com/getting-started-gulp/)
-*[http://www.onlinewebcheck.com/](http://www.onlinewebcheck.com/)
-*[http://jigsaw.w3.org/css-validator/](http://jigsaw.w3.org/css-validator/)
-*[https://developer.mozilla.org/en-US/docs/Web/CSS/Reference](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference)
-*[http://caniuse.com/](http://caniuse.com/)
+* [https://paulferrett.com/fontawesome-favicon/](https://paulferrett.com/fontawesome-favicon/)
+* [https://www.iconfinder.com/](https://www.iconfinder.com/)
+* [https://css-tricks.com/getting-started-gulp/](https://css-tricks.com/getting-started-gulp/)
+* [http://www.onlinewebcheck.com/](http://www.onlinewebcheck.com/)
+* [http://jigsaw.w3.org/css-validator/](http://jigsaw.w3.org/css-validator/)
+* [https://developer.mozilla.org/en-US/docs/Web/CSS/Reference](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference)
+* [http://caniuse.com/](http://caniuse.com/)
 
 ### Access for All
 I have created a GitHub account with access privledges to this repo for those who may not have one
