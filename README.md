@@ -42,6 +42,12 @@ Sites I used for help and inspiration for this project
 * [http://jigsaw.w3.org/css-validator/](http://jigsaw.w3.org/css-validator/)
 * [https://developer.mozilla.org/en-US/docs/Web/CSS/Reference](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference)
 * [http://caniuse.com/](http://caniuse.com/)
+* [Browser Stack](https://www.browserstack.com)
+
+### Testing / QA
+I did a decent amount of crosss OS & browser testing using Browser Stack. If you haven't used it I HIGHLY reccommend it. It has virtually every combo of OS/Device/Browser you could possibly imagine with different versions of each.
+
+I did testing on Win10: Edge 14 & 13, IE11, FF49, Chrome53; Win8: IE10, FF49, Chrome 52; iOS: iPhone SE, 6, iPad Air 2; Android: S7, Note4, Nexus6; OSX Sierra & El Capitan: Safari 10, Chrome 53. 
 
 ### Access for All
 I have created a GitHub account with access privileges to this repo for those who may not have one
